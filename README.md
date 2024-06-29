@@ -30,4 +30,22 @@ In bash there exists two types of variables:
 You can access the value of the variable with the `$` symbol.
 Variables can't start with numbers!
 
-You can comment with using `#` symbol.
+You can comment by using `#` symbol.
+
+## To take user input you can use `read` function.
+
+```shell
+read variable_name
+```
+
+By default the input will start on the next line.
+To enable same line input provide `-p` flag.
+
+```shell
+read -p "Enter your name: " name
+```
+
+You can also provide `s` flag to make the input silent, like password input or `a` flag for array input.
+
+If you don't provide the variable name, the input will be saved into
+the global variable `REPLY`
