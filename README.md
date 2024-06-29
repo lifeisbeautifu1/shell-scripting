@@ -45,7 +45,23 @@ To enable same line input provide `-p` flag.
 read -p "Enter your name: " name
 ```
 
-You can also provide `s` flag to make the input silent, like password input or `a` flag for array input.
+You can also provide `s` flag to make the input silent like password or `a` flag for array input.
 
 If you don't provide the variable name, the input will be saved into
 the global variable `REPLY`
+
+## Passing arguments to shell scripts
+
+You can pass arguments to your scripts before your execute them in the following way:
+
+```shell
+./script-name.sh arg1 arg2 arg3
+```
+
+You can access from within the shell script in the two ways:
+
+- Using numbered variables like so `$0`, `$1`, `$2`. Where `$1` is the first argument and `$0` is always the filename.
+
+- Using global array of arguments by accessing `@` variable.
+
+The length of the passed arguments is accessible with `#` variable.
