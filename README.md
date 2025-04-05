@@ -65,3 +65,36 @@ You can access from within the shell script in the two ways:
 - Using global array of arguments by accessing `@` variable.
 
 The length of the passed arguments is accessible with `#` variable.
+
+## If statement
+
+You can create an if statement like so:
+
+```bash
+if [ condition ]
+then
+    statement
+elif [ condition ]
+then
+    statement
+else
+    statement
+fi
+```
+
+### Integer comparison
+
+- `-eq` - is equal to - `if [ $a -eq $b ]`
+- `-ne` - is not equal to - `if [ $a -ne $b ]`
+- `-gt` - is greater than - `if [ $a -gt $b ]`
+- `-ge` - is greater than or equal - `if [ $a -ge $b ]`
+- `-lt` - is less than - `if [ $a -lt $b ]`
+- `-le` - is less than or equal - `if [ $a -le $b ]`
+
+### String comparison
+
+- `==` - is equal to - `if [ $a == $b ]`
+- `!=` - is not equal to - `if [ $a != $b ]`
+- `<` - is less than, in ASCII alphabetical order - `if [[ $a < $b ]]`
+- `>` - is greater than, in ASCII alphabetical order - `if [[ $a > $b ]]`
+- `-z` - string is null, that is, has zero length
