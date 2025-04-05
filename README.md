@@ -98,3 +98,25 @@ fi
 - `<` - is less than, in ASCII alphabetical order - `if [[ $a < $b ]]`
 - `>` - is greater than, in ASCII alphabetical order - `if [[ $a > $b ]]`
 - `-z` - string is null, that is, has zero length
+
+## File test operators
+
+To check for file existence and other things you can use file test operators together with if statement like so:
+
+```shell
+file_name="path/to/filename"
+
+if [ -e $file_name ]
+then
+    condition
+fi
+```
+
+- `e` flag for checking file existence
+- `d` for checking directory existence
+- `b` for checking if file is blob type file
+- `c` for checking if file is character type file
+- `s` for checking if file is empty
+- `r` for checking file read permission
+- `w` for checking file write permission
+- `s` for checking file execution permission
