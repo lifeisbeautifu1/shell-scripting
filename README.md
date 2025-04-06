@@ -224,3 +224,32 @@ do
     statement
 done
 ```
+
+## For loop
+
+You can create for loop in the many ways:
+
+```shell
+for VARIABLE in 1 2 3 ... 10
+do
+    statement
+done
+```
+
+To create range:
+
+```shell
+for VARIABLE in {0..10..1}
+do
+    statement
+done
+```
+
+Like in other programming languages:
+
+```shell
+for (( i=0; i<10; i++ ))
+do
+    statement
+done
+```
