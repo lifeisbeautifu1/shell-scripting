@@ -253,3 +253,25 @@ do
     statement
 done
 ```
+
+## Functions
+
+You can create functions in the two following ways:
+
+```shell
+function name() {
+    statement
+}
+```
+
+or
+
+```shell
+name() {
+    statement
+}
+
+name
+```
+
+You can access function arguments using `$1`, `$2`, etc.
