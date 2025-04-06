@@ -174,3 +174,15 @@ then
     statement
 fi
 ```
+
+## Case statement
+
+For pattern matching you can use case statement:
+
+```shell
+case expression in
+    pattern1 )
+        statements ;;
+    pattern2 )
+        statements ;;
+```
