@@ -212,3 +212,15 @@ No get the length of the array use `#` operator:
 ```shell
 echo "The length of the array is: ${#my_arr[@]}"
 ```
+
+## While loop
+
+You can create a while loop to repeat instruction until a desired condition is met:
+
+```shell
+while [ condition ]
+do
+    statement
+    statement
+done
+```
