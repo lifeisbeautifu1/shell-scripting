@@ -125,7 +125,7 @@ fi
 
 You can use `cat` command with `>` or `>>` operators. The difference between them is that the first one clears the file content before appending and the other is not.
 
-## Logical and operator
+## Logical AND operator
 
 You can use logical `AND` operator in the following ways:
 
@@ -145,6 +145,31 @@ fi
 
 ```shell
 if [[ condition && condition ]]
+then
+    statement
+fi
+```
+
+## Logical OR operator
+
+You can use logical `OR` operator in the following ways:
+
+```shell
+if [ condition ] || [ condition ]
+then
+    statement
+fi
+```
+
+```shell
+if [ condition -o condition ]
+then
+    statement
+fi
+```
+
+```shell
+if [[ condition || condition ]]
 then
     statement
 fi
