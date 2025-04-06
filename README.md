@@ -124,3 +124,28 @@ fi
 ## Appending text to the end of the file
 
 You can use `cat` command with `>` or `>>` operators. The difference between them is that the first one clears the file content before appending and the other is not.
+
+## Logical and operator
+
+You can use logical `AND` operator in the following ways:
+
+```shell
+if [ condition ] && [ condition ]
+then
+    statement
+fi
+```
+
+```shell
+if [ condition -a condition ]
+then
+    statement
+fi
+```
+
+```shell
+if [[ condition && condition ]]
+then
+    statement
+fi
+```
