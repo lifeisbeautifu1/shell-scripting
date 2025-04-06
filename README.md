@@ -185,6 +185,7 @@ case expression in
         statements ;;
     pattern2 )
         statements ;;
+esac
 ```
 
 ## Array variables
