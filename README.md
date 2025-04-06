@@ -186,3 +186,29 @@ case expression in
     pattern2 )
         statements ;;
 ```
+
+## Array variables
+
+You can declare an array like so:
+
+```shell
+my_arr=("apple" "banana" "orange")
+```
+
+And you can access items in array with `[]` index operator:
+
+```shell
+echo "${my_arr[0]}"
+```
+
+To list full array use `@` as index:
+
+```shell
+echo "${my_arr[@]}"
+```
+
+No get the length of the array use `#` operator:
+
+```shell
+echo "The length of the array is: ${#my_arr[@]}"
+```
